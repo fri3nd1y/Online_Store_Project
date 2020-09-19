@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Shop City</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button class="brand button" onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">
+                    <img class="logo" src="/images/logo.png">
+                    Shop City
+                </a>
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin.html">Sign in</a>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu">x</button>
+            <ul>
+                <li>
+                    <a href="index.html">Anime</a>
+                </li>
+                <li>
+                    <a href="index.html">Panties</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="/images/d1.jpg" alt="product">
+                            <div class="product-name">
+                                <a href="product.html">02 Dino Girl</a>
+                            </div>
+                            <div clas="product-brand">Anime</div>
+                            <div class="product-price">Free</div>
+                            <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="/images/d1.jpg" alt="product">
+                            <div class="product-name">
+                                <a href="product.html">02 Dino Girl</a>
+                            </div>
+                            <div clas="product-brand">Anime</div>
+                            <div class="product-price">Free</div>
+                            <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-image" src="/images/d1.jpg" alt="product">
+                            <div class="product-name">
+                                <a href="product.html">02 Dino Girl</a>
+                            </div>
+                            <div clas="product-brand">Anime</div>
+                            <div class="product-price">Free</div>
+                            <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </main>
+        <footer class="footer">
+            All rights reserved.
+        </footer>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    function openMenu() {
+        document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("close");
+    }
+</script>
+</body>
+
+</html>
